@@ -12,7 +12,7 @@ class Extract:
         self.bucket_name = 'coviddata'
         self.object_key = 'covid_19_indonesia_time_series_all.csv'
         logging.basicConfig(level=logging.INFO)
-        self.s3_client = boto3.client('s3', endpoint_url='https://s3-jkt1.dcloud.co.id')  # Initialize S3 client
+        self.s3_client = boto3.client('s3', endpoint_url='https-url')  # Initialize S3 client
 
     def process_time(self,time: dt.datetime):
         """Round the supplied time to date"""
